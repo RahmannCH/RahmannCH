@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="230" viewBox="0 0 840 230" fill="none">
+  <style>
+    .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1.5; }
+    .header { fill: #161b22; }
+    .text-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; font-size: 13px; fill: #8b949e; font-weight: 500; }
+    .code { font-family: "Fira Code", "JetBrains Mono", Consolas, monospace; font-size: 14px; }
+    .keyword { fill: #ff7b72; font-weight: 600; }
+    .variable { fill: #79c0ff; }
+    .property { fill: #d2a8ff; }
+    .string { fill: #a5d6ff; }
+    .accent { fill: #00ffff; font-weight: bold; }
+    .cursor {
+      animation: blink 1s infinite;
+      fill: #00ffff;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    .neon-glow {
+      filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.4));
+    }
+  </style>
+
+  <!-- Window Container -->
+  <rect x="1" y="1" width="838" height="228" rx="12" class="bg"/>
+
+  <!-- Window Header -->
+  <path d="M1 13C1 6.37258 6.37258 1 13 1H827C833.627 1 839 6.37258 839 13V38H1V13Z" class="header"/>
+  
+  <!-- Window Controls -->
+  <circle cx="24" cy="19" r="6" fill="#ff5f56"/>
+  <circle cx="44" cy="19" r="6" fill="#ffbd2e"/>
+  <circle cx="64" cy="19" r="6" fill="#27c93f"/>
+
+  <!-- Window Title -->
+  <text x="420" y="24" text-anchor="middle" class="text-title">⚡ rahmannch@ulm-workspace: ~/profile.ts</text>
+
+  <!-- Code Body -->
+  <g transform="translate(32, 68)" class="code">
+    <!-- Line 1 -->
+    <text y="0">
+      <tspan class="keyword">const</tspan> <tspan class="variable">developer</tspan> = {
+    </text>
+
+    <!-- Line 2 -->
+    <text y="26">
+      &nbsp;&nbsp;<tspan class="property">name</tspan>: <tspan class="string">"Muhammad Nur Rahman"</tspan>,
+    </text>
+
+    <!-- Line 3 -->
+    <text y="52">
+      &nbsp;&nbsp;<tspan class="property">status</tspan>: <tspan class="string">"CS Student @ Lambung Mangkurat University"</tspan>,
+    </text>
+
+    <!-- Line 4 -->
+    <text y="78">
+      &nbsp;&nbsp;<tspan class="property">specialties</tspan>: [<tspan class="string">"AI-Driven Web"</tspan>, <tspan class="string">"3D / Glassmorphism UI"</tspan>, <tspan class="string">"Cybersecurity"</tspan>],
+    </text>
+
+    <!-- Line 5 -->
+    <text y="104">
+      &nbsp;&nbsp;<tspan class="property">flagship</tspan>: <tspan class="accent neon-glow">"Zadify - Islamic Super-App"</tspan>
+    </text>
+
+    <!-- Line 6 -->
+    <text y="130">
+      };<rect x="24" y="118" width="8" height="15" class="cursor"/>
+    </text>
+  </g>
+</svg>
