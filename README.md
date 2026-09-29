@@ -13,7 +13,7 @@
 <br/>
 
 <!-- Animated IDE Window Hero -->
-<img src="./assets/hero-animated.svg" width="840" alt="Muhammad Nur Rahman - Terminal Profile" />
+<img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/hero-animated.svg" width="840" alt="Muhammad Nur Rahman - Terminal Profile" />
 
 <br/><br/>
 
@@ -45,7 +45,7 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat** with
         <h3>🕋 Zadify — The Islamic Super-App</h3>
         <p>Comprehensive Quranic workspace featuring real-time Web Audio Murottal, Gemini AI Mentor, and 3D Qibla Compass.</p>
         <a href="https://github.com/RahmannCH/Zadify">
-          <img src="./assets/banner-zadify.png" width="98%" alt="Zadify Preview" style="border-radius: 8px;" />
+          <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/banner-zadify.png" width="98%" alt="Zadify Preview" style="border-radius: 8px;" />
         </a>
         <br/><br/>
         <a href="https://zadify.vercel.app" target="_blank">
@@ -67,7 +67,7 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat** with
         <h3>⌨️ CodeChrome</h3>
         <p>Keyboard-first browser dashboard with synthesized switch sound effects & live AI streaming.</p>
         <a href="https://github.com/RahmannCH/CodeChrome">
-          <img src="./assets/banner-codechrome.png" width="96%" alt="CodeChrome Preview" style="border-radius: 8px;" />
+          <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/banner-codechrome.png" width="96%" alt="CodeChrome Preview" style="border-radius: 8px;" />
         </a>
         <br/><br/>
         <a href="https://code-chrome.vercel.app" target="_blank">
@@ -105,7 +105,7 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat** with
         <h3>🦈 VirtualPet DFA</h3>
         <p>College simulation system mathematically modeled with a Deterministic Finite Automaton (5-tuple DFA).</p>
         <a href="https://github.com/RahmannCH/VirtualPet_TeKom">
-          <img src="./assets/banner-virtualpet.png" width="120" alt="VirtualPet DFA Preview" />
+          <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/banner-virtualpet.png" width="120" alt="VirtualPet DFA Preview" />
         </a>
         <br/><br/>
         <a href="https://virtual-pet-tekom.vercel.app" target="_blank">
@@ -118,7 +118,7 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat** with
         <h3>🖥️ Biodata Saya Portal</h3>
         <p>Futuristic cybernetic portfolio website with neon matrix themes, particle effects & audio SFX.</p>
         <a href="https://biodata-saya-one.vercel.app/">
-          <img src="./assets/banner-portfolio.png" width="96%" alt="Biodata Preview" style="border-radius: 8px;" />
+          <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/banner-portfolio.png" width="96%" alt="Biodata Preview" style="border-radius: 8px;" />
         </a>
         <br/><br/>
         <a href="https://biodata-saya-one.vercel.app/" target="_blank">
@@ -215,9 +215,9 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat** with
 <div align="center">
   <h3>🐍 Contribution Graph Activity</h3>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/github-contribution-grid-snake.svg">
-    <img src="./assets/github-contribution-grid-snake-dark.svg" alt="Contribution Snake" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/github-contribution-grid-snake.svg">
+    <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/github-contribution-grid-snake-dark.svg" alt="Contribution Snake" />
   </picture>
 </div>
 
