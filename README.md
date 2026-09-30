@@ -22,7 +22,7 @@
 ### 🌌 Exploring CyberSecurity • Crafting AI-Driven Web Apps • Engineering 3D UI
 
 <p align="center">
-  <a href="https://github.com/RahmannCH/Zadify"><img src="https://img.shields.io/badge/Status-Building_Zadify_2.0-00FFFF?style=flat-square&logo=visualstudiocode&logoColor=black" alt="Status" /></a>
+  <a href="https://github.com/RahmannCH/Zadify" target="_blank"><img src="https://img.shields.io/badge/Status-Building_Zadify_2.0-00FFFF?style=flat-square&logo=visualstudiocode&logoColor=black" alt="Status" /></a>
   <img src="https://img.shields.io/badge/Focus-Fullstack_TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="Focus" />
   <img src="https://img.shields.io/badge/Campus-ULM_FMIPA-FFD700?style=flat-square&logo=googleclassroom&logoColor=black" alt="Campus" />
 </p>
@@ -56,7 +56,7 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat (ULM)*
           <img src="https://img.shields.io/badge/Live_Demo-00FFFF?style=for-the-badge&logo=vercel&logoColor=black" alt="Live Demo"/>
         </a>
         &nbsp;
-        <a href="https://github.com/RahmannCH/Zadify">
+        <a href="https://github.com/RahmannCH/Zadify" target="_blank">
           <img src="https://img.shields.io/badge/Source_Code-1A1A1A?style=for-the-badge&logo=github&logoColor=white" alt="Source Code"/>
         </a>
       </div>
@@ -78,7 +78,7 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat (ULM)*
           <img src="https://img.shields.io/badge/Live_Demo-00FFFF?style=flat-square&logo=vercel&logoColor=black" alt="Live Demo"/>
         </a>
         &nbsp;
-        <a href="https://github.com/RahmannCH/CodeChrome">
+        <a href="https://github.com/RahmannCH/CodeChrome" target="_blank">
           <img src="https://img.shields.io/badge/Repository-1A1A1A?style=flat-square&logo=github&logoColor=white" alt="Repo"/>
         </a>
       </div>
@@ -95,7 +95,7 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat (ULM)*
           <img src="https://img.shields.io/badge/Live_Demo-00FFFF?style=flat-square&logo=vercel&logoColor=black" alt="Live Demo"/>
         </a>
         &nbsp;
-        <a href="https://github.com/RahmannCH/Game-Farm-2.0">
+        <a href="https://github.com/RahmannCH/Game-Farm-2.0" target="_blank">
           <img src="https://img.shields.io/badge/Repository-1A1A1A?style=flat-square&logo=github&logoColor=white" alt="Repo"/>
         </a>
       </div>
@@ -116,7 +116,7 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat (ULM)*
           <img src="https://img.shields.io/badge/Live_Demo-00FFFF?style=flat-square&logo=vercel&logoColor=black" alt="Live Demo"/>
         </a>
         &nbsp;
-        <a href="https://github.com/RahmannCH/VirtualPet_TeKom">
+        <a href="https://github.com/RahmannCH/VirtualPet_TeKom" target="_blank">
           <img src="https://img.shields.io/badge/Repository-1A1A1A?style=flat-square&logo=github&logoColor=white" alt="Repo"/>
         </a>
       </div>
@@ -133,7 +133,7 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat (ULM)*
           <img src="https://img.shields.io/badge/Live_Demo-00FFFF?style=flat-square&logo=vercel&logoColor=black" alt="Live Demo"/>
         </a>
         &nbsp;
-        <a href="https://github.com/RahmannCH/Biodata-Saya">
+        <a href="https://github.com/RahmannCH/Biodata-Saya" target="_blank">
           <img src="https://img.shields.io/badge/Repository-1A1A1A?style=flat-square&logo=github&logoColor=white" alt="Repo"/>
         </a>
       </div>
@@ -269,7 +269,7 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat (ULM)*
   <br/><br/>
 
   <p align="center">
-    <a href="https://visitcount.itsvg.in"><img src="https://komarev.com/ghpvc/?username=RahmannCH&icon=10&color=00FFFF&style=flat-square" alt="Profile Views" /></a>
+    <a href="https://visitcount.itsvg.in" target="_blank"><img src="https://komarev.com/ghpvc/?username=RahmannCH&icon=10&color=00FFFF&style=flat-square" alt="Profile Views" /></a>
   </p>
 
 </div>
