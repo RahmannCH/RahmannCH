@@ -1,14 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="230" viewBox="0 0 840 230" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="260" viewBox="0 0 840 260" fill="none">
   <style>
-    .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1.5; }
-    .header { fill: #161b22; }
-    .text-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; font-size: 13px; fill: #8b949e; font-weight: 500; }
-    .code { font-family: "Fira Code", "JetBrains Mono", Consolas, monospace; font-size: 14px; }
-    .keyword { fill: #ff7b72; font-weight: 600; }
-    .variable { fill: #79c0ff; }
-    .property { fill: #d2a8ff; }
-    .string { fill: #a5d6ff; }
-    .accent { fill: #00ffff; font-weight: bold; }
+    .window-bg { fill: #0d1117; stroke: #30363d; stroke-width: 1.5; }
+    .titlebar { fill: #161b22; }
+    .tab-active { fill: #0d1117; stroke: #30363d; stroke-width: 1; }
+    .tab-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; font-size: 11.5px; fill: #e6edf3; font-weight: 500; }
+    .statusbar { fill: #161b22; stroke: #30363d; stroke-width: 1; }
+    .status-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; font-size: 11px; fill: #8b949e; }
+    .linenum { font-family: "Fira Code", "JetBrains Mono", Consolas, monospace; font-size: 13px; fill: #484f58; text-anchor: end; }
+    .code { font-family: "Fira Code", "JetBrains Mono", Consolas, monospace; font-size: 13.5px; }
+    .kw { fill: #ff7b72; font-weight: 600; }
+    .var { fill: #79c0ff; }
+    .prop { fill: #d2a8ff; }
+    .str { fill: #a5d6ff; }
+    .num { fill: #79c0ff; }
+    .accent { fill: #00ffff; font-weight: 700; }
+    .comment { fill: #8b949e; font-style: italic; }
     .cursor {
       animation: blink 1s infinite;
       fill: #00ffff;
@@ -18,54 +24,90 @@
       50% { opacity: 0; }
     }
     .neon-glow {
-      filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.4));
+      filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.45));
     }
   </style>
 
-  <!-- Window Container -->
-  <rect x="1" y="1" width="838" height="228" rx="12" class="bg"/>
+  <!-- Outer Window Frame -->
+  <rect x="1" y="1" width="838" height="258" rx="10" class="window-bg"/>
 
-  <!-- Window Header -->
-  <path d="M1 13C1 6.37258 6.37258 1 13 1H827C833.627 1 839 6.37258 839 13V38H1V13Z" class="header"/>
+  <!-- Top Titlebar -->
+  <path d="M1 10C1 5.02944 5.02944 1 10 1H830C834.971 1 839 5.02944 839 10V36H1V10Z" class="titlebar"/>
   
-  <!-- Window Controls -->
-  <circle cx="24" cy="19" r="6" fill="#ff5f56"/>
-  <circle cx="44" cy="19" r="6" fill="#ffbd2e"/>
-  <circle cx="64" cy="19" r="6" fill="#27c93f"/>
+  <!-- Traffic Light Window Controls -->
+  <circle cx="20" cy="18" r="5.5" fill="#ff5f56"/>
+  <circle cx="38" cy="18" r="5.5" fill="#ffbd2e"/>
+  <circle cx="56" cy="18" r="5.5" fill="#27c93f"/>
 
-  <!-- Window Title -->
-  <text x="420" y="24" text-anchor="middle" class="text-title">⚡ rahmannch@ulm-workspace: ~/profile.ts</text>
+  <!-- Active Editor Tab -->
+  <path d="M80 8H210V36H80V8Z" class="tab-active"/>
+  <rect x="94" y="14" width="10" height="10" rx="2" fill="#3178c6"/>
+  <text x="96" y="22" font-family="monospace" font-size="8" font-weight="bold" fill="#ffffff">TS</text>
+  <text x="112" y="22" class="tab-text">profile.ts</text>
+  <circle cx="198" cy="18" r="3.5" fill="#8b949e"/>
 
-  <!-- Code Body -->
-  <g transform="translate(32, 68)" class="code">
-    <!-- Line 1 -->
+  <!-- Window Header Centered Title -->
+  <text x="500" y="22" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="11.5" fill="#8b949e">rahmannch@ulm-fmipa : ~/workspace/portfolio</text>
+
+  <!-- Line Numbers Column -->
+  <g transform="translate(48, 66)" class="linenum">
+    <text y="0">01</text>
+    <text y="22">02</text>
+    <text y="44">03</text>
+    <text y="66">04</text>
+    <text y="88">05</text>
+    <text y="110">06</text>
+    <text y="132">07</text>
+    <text y="154">08</text>
+  </g>
+
+  <!-- Code Editor Body -->
+  <g transform="translate(68, 66)" class="code">
+    <!-- Line 01 -->
     <text y="0">
-      <tspan class="keyword">const</tspan> <tspan class="variable">developer</tspan> = {
+      <tspan class="kw">interface</tspan> <tspan class="var">Developer</tspan> { <tspan class="prop">name</tspan>: <tspan class="str">string</tspan>; <tspan class="prop">role</tspan>: <tspan class="str">string</tspan>; }
     </text>
 
-    <!-- Line 2 -->
-    <text y="26">
-      &nbsp;&nbsp;<tspan class="property">name</tspan>: <tspan class="string">"Muhammad Nur Rahman"</tspan>,
+    <!-- Line 02 -->
+    <text y="22">
+      <tspan class="kw">const</tspan> <tspan class="var">me</tspan>: <tspan class="var">Developer</tspan> = {
     </text>
 
-    <!-- Line 3 -->
-    <text y="52">
-      &nbsp;&nbsp;<tspan class="property">status</tspan>: <tspan class="string">"CS Student @ Lambung Mangkurat University"</tspan>,
+    <!-- Line 03 -->
+    <text y="44" x="20">
+      <tspan class="prop">name</tspan>: <tspan class="str">"Muhammad Nur Rahman"</tspan>,
     </text>
 
-    <!-- Line 4 -->
-    <text y="78">
-      &nbsp;&nbsp;<tspan class="property">specialties</tspan>: [<tspan class="string">"AI-Driven Web"</tspan>, <tspan class="string">"3D / Glassmorphism UI"</tspan>, <tspan class="string">"Cybersecurity"</tspan>],
+    <!-- Line 04 -->
+    <text y="66" x="20">
+      <tspan class="prop">education</tspan>: <tspan class="str">"S1 Computer Science @ Lambung Mangkurat University"</tspan>,
     </text>
 
-    <!-- Line 5 -->
-    <text y="104">
-      &nbsp;&nbsp;<tspan class="property">flagship</tspan>: <tspan class="accent neon-glow">"Zadify - Islamic Super-App"</tspan>
+    <!-- Line 05 -->
+    <text y="88" x="20">
+      <tspan class="prop">focus</tspan>: [<tspan class="str">"AI-Driven Web"</tspan>, <tspan class="str">"Cybersecurity"</tspan>, <tspan class="str">"3D / Glassmorphism UI"</tspan>],
     </text>
 
-    <!-- Line 6 -->
-    <text y="130">
-      };<rect x="24" y="118" width="8" height="15" class="cursor"/>
+    <!-- Line 06 -->
+    <text y="110" x="20">
+      <tspan class="prop">flagship</tspan>: <tspan class="accent neon-glow">"Zadify - Modern Islamic Super-App"</tspan>,
     </text>
+
+    <!-- Line 07 -->
+    <text y="132" x="20">
+      <tspan class="prop">status</tspan>: <tspan class="str">"Available for High-Impact Opportunities"</tspan>
+    </text>
+
+    <!-- Line 08 -->
+    <text y="154">
+      };<rect x="22" y="142" width="8" height="15" class="cursor"/>
+    </text>
+  </g>
+
+  <!-- Bottom Status Bar -->
+  <path d="M1 236H839V250C839 254.971 834.971 259 830 259H10C5.02944 259 1 254.971 1 250V236Z" class="statusbar"/>
+  
+  <g transform="translate(18, 250)" class="status-text">
+    <text y="0"><tspan fill="#38bdf8">⎇ main*</tspan>  •  0 errors, 0 warnings  •  UTF-8  •  TypeScript 5.5  •  Prettier: ✓</text>
   </g>
 </svg>
