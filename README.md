@@ -45,7 +45,7 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat** with
         <h3>🕋 Zadify — The Islamic Super-App</h3>
         <p>Comprehensive Quranic workspace featuring real-time Web Audio Murottal, Gemini AI Mentor, and 3D Qibla Compass.</p>
         <a href="https://github.com/RahmannCH/Zadify">
-          <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/banner-zadify.png" width="98%" alt="Zadify Preview" style="border-radius: 8px;" />
+          <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/preview-zadify.png" width="98%" alt="Zadify Preview" style="border-radius: 8px;" />
         </a>
         <br/><br/>
         <a href="https://zadify.vercel.app" target="_blank">
@@ -67,7 +67,7 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat** with
         <h3>⌨️ CodeChrome</h3>
         <p>Keyboard-first browser dashboard with synthesized switch sound effects & live AI streaming.</p>
         <a href="https://github.com/RahmannCH/CodeChrome">
-          <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/banner-codechrome.png" width="96%" alt="CodeChrome Preview" style="border-radius: 8px;" />
+          <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/preview-codechrome.png" width="96%" alt="CodeChrome Preview" style="border-radius: 8px;" />
         </a>
         <br/><br/>
         <a href="https://code-chrome.vercel.app" target="_blank">
@@ -84,7 +84,7 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat** with
         <h3>🚜 Game-Farm-2.0</h3>
         <p>2D agricultural simulator built entirely on native HTML5 Canvas 2D without game engines.</p>
         <a href="https://github.com/RahmannCH/Game-Farm-2.0">
-          <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/card-gamefarm.svg" width="96%" alt="Game Farm Preview" style="border-radius: 8px;" />
+          <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/preview-gamefarm.png" width="96%" alt="Game Farm Preview" style="border-radius: 8px;" />
         </a>
         <br/><br/>
         <a href="https://game-farm-2-0.vercel.app" target="_blank">
@@ -105,7 +105,7 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat** with
         <h3>🦈 VirtualPet DFA</h3>
         <p>College simulation system mathematically modeled with a Deterministic Finite Automaton (5-tuple DFA).</p>
         <a href="https://github.com/RahmannCH/VirtualPet_TeKom">
-          <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/banner-virtualpet.png" width="120" alt="VirtualPet DFA Preview" />
+          <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/preview-virtualpet.png" width="96%" alt="VirtualPet DFA Preview" style="border-radius: 8px;" />
         </a>
         <br/><br/>
         <a href="https://virtual-pet-tekom.vercel.app" target="_blank">
@@ -118,7 +118,7 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat** with
         <h3>🖥️ Biodata Saya Portal</h3>
         <p>Futuristic cybernetic portfolio website with neon matrix themes, particle effects & audio SFX.</p>
         <a href="https://biodata-saya-one.vercel.app/">
-          <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/banner-portfolio.png" width="96%" alt="Biodata Preview" style="border-radius: 8px;" />
+          <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/preview-portfolio.png" width="96%" alt="Biodata Preview" style="border-radius: 8px;" />
         </a>
         <br/><br/>
         <a href="https://biodata-saya-one.vercel.app/" target="_blank">
