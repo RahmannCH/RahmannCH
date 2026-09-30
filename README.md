@@ -1,26 +1,28 @@
 <div align="center">
 
-<!-- Quick Navigation Bar -->
+<!-- Quick Interactive Navigation Bar with Guaranteed Anchor Resolvers -->
 <p align="center">
-  <a href="#-overview"><b>[ 🏠 Overview ]</b></a> &nbsp;•&nbsp;
-  <a href="#-featured-projects"><b>[ 🚀 Featured Projects ]</b></a> &nbsp;•&nbsp;
-  <a href="#-technical-arsenal"><b>[ ⚡ Tech Arsenal ]</b></a> &nbsp;•&nbsp;
-  <a href="#-academic--background"><b>[ 🎓 Background ]</b></a> &nbsp;•&nbsp;
-  <a href="#-analytics--metrics"><b>[ 📊 Analytics ]</b></a> &nbsp;•&nbsp;
-  <a href="#-connect-with-me"><b>[ 🌐 Connect ]</b></a>
+  <a href="#overview"><b>[ 🏠 Overview ]</b></a> &nbsp;•&nbsp;
+  <a href="#projects"><b>[ 🚀 Projects ]</b></a> &nbsp;•&nbsp;
+  <a href="#tech"><b>[ ⚡ Tech Arsenal ]</b></a> &nbsp;•&nbsp;
+  <a href="#academic"><b>[ 🎓 Background ]</b></a> &nbsp;•&nbsp;
+  <a href="#analytics"><b>[ 📊 Analytics ]</b></a> &nbsp;•&nbsp;
+  <a href="#connect"><b>[ 🌐 Connect ]</b></a>
 </p>
 
 <br/>
 
-<!-- Animated IDE Window Hero -->
-<img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/hero-animated.svg" width="840" alt="Muhammad Nur Rahman - Terminal Profile" />
+<!-- Clickable Animated IDE Window Hero (Links to Live Interactive Portfolio) -->
+<a href="https://biodata-saya-one.vercel.app/" target="_blank" title="Click to open Interactive Portfolio">
+  <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/hero-animated.svg?v=20261001" width="840" alt="Muhammad Nur Rahman - Interactive IDE Profile" />
+</a>
 
 <br/><br/>
 
 ### 🌌 Exploring CyberSecurity • Crafting AI-Driven Web Apps • Engineering 3D UI
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Building_Zadify_2.0-00FFFF?style=flat-square&logo=visualstudiocode&logoColor=black" alt="Status" />
+  <a href="https://github.com/RahmannCH/Zadify"><img src="https://img.shields.io/badge/Status-Building_Zadify_2.0-00FFFF?style=flat-square&logo=visualstudiocode&logoColor=black" alt="Status" /></a>
   <img src="https://img.shields.io/badge/Focus-Fullstack_TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="Focus" />
   <img src="https://img.shields.io/badge/Campus-ULM_FMIPA-FFD700?style=flat-square&logo=googleclassroom&logoColor=black" alt="Campus" />
 </p>
@@ -29,12 +31,14 @@
 
 <br/>
 
+<span id="overview"></span>
 ## 🏠 Overview
 
-Undergraduate Computer Science student at **Universitas Lambung Mangkurat** with an engineering background from **SMKN 1 Banjarmasin (TJKT)**. Specializing in high-performance web ecosystems, procedural audio engines, hardware-accelerated UI/UX motion (Glassmorphism & 3D accents), and autonomous multi-agent systems.
+Undergraduate Computer Science student at **Universitas Lambung Mangkurat (ULM)** with a solid infrastructure & network engineering background from **SMKN 1 Banjarmasin (TJKT)**. Specializing in high-performance web ecosystems, procedural audio engines, hardware-accelerated UI/UX motion (Glassmorphism & 3D accents), and autonomous multi-agent systems.
 
 ---
 
+<span id="projects"></span>
 ## 🚀 Featured Projects
 
 <table width="100%">
@@ -44,8 +48,8 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat** with
       <div align="center">
         <h3>🕋 Zadify — The Islamic Super-App</h3>
         <p>Comprehensive Quranic workspace featuring real-time Web Audio Murottal, Gemini AI Mentor, and 3D Qibla Compass.</p>
-        <a href="https://github.com/RahmannCH/Zadify">
-          <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/preview-zadify.png" width="98%" alt="Zadify Preview" style="border-radius: 8px;" />
+        <a href="https://zadify.vercel.app" target="_blank" title="Launch Zadify Live Demo">
+          <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/preview-zadify.png?v=20261001" width="98%" alt="Zadify Preview" style="border-radius: 8px;" />
         </a>
         <br/><br/>
         <a href="https://zadify.vercel.app" target="_blank">
@@ -66,8 +70,8 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat** with
       <div align="center">
         <h3>⌨️ CodeChrome</h3>
         <p>Keyboard-first browser dashboard with synthesized switch sound effects & live AI streaming.</p>
-        <a href="https://github.com/RahmannCH/CodeChrome">
-          <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/preview-codechrome.png" width="96%" alt="CodeChrome Preview" style="border-radius: 8px;" />
+        <a href="https://code-chrome.vercel.app" target="_blank" title="Launch CodeChrome Live Demo">
+          <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/preview-codechrome.png?v=20261001" width="96%" alt="CodeChrome Preview" style="border-radius: 8px;" />
         </a>
         <br/><br/>
         <a href="https://code-chrome.vercel.app" target="_blank">
@@ -82,9 +86,9 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat** with
     <td width="50%" valign="top">
       <div align="center">
         <h3>🚜 Game-Farm-2.0</h3>
-        <p>2D agricultural simulator built entirely on native HTML5 Canvas 2D without game engines.</p>
-        <a href="https://github.com/RahmannCH/Game-Farm-2.0">
-          <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/preview-gamefarm.png" width="96%" alt="Game Farm Preview" style="border-radius: 8px;" />
+        <p>2D agricultural simulator built entirely on native HTML5 Canvas 2D without external game engines.</p>
+        <a href="https://game-farm-2-0.vercel.app" target="_blank" title="Launch Game-Farm-2.0 Live Demo">
+          <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/preview-gamefarm.png?v=20261001" width="96%" alt="Game Farm Preview" style="border-radius: 8px;" />
         </a>
         <br/><br/>
         <a href="https://game-farm-2-0.vercel.app" target="_blank">
@@ -104,12 +108,16 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat** with
       <div align="center">
         <h3>🦈 VirtualPet DFA</h3>
         <p>College simulation system mathematically modeled with a Deterministic Finite Automaton (5-tuple DFA).</p>
-        <a href="https://github.com/RahmannCH/VirtualPet_TeKom">
-          <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/preview-virtualpet.png" width="96%" alt="VirtualPet DFA Preview" style="border-radius: 8px;" />
+        <a href="https://virtual-pet-tekom.vercel.app" target="_blank" title="Launch VirtualPet Live Demo">
+          <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/preview-virtualpet.png?v=20261001" width="96%" alt="VirtualPet DFA Preview" style="border-radius: 8px;" />
         </a>
         <br/><br/>
         <a href="https://virtual-pet-tekom.vercel.app" target="_blank">
           <img src="https://img.shields.io/badge/Live_Demo-00FFFF?style=flat-square&logo=vercel&logoColor=black" alt="Live Demo"/>
+        </a>
+        &nbsp;
+        <a href="https://github.com/RahmannCH/VirtualPet_TeKom">
+          <img src="https://img.shields.io/badge/Repository-1A1A1A?style=flat-square&logo=github&logoColor=white" alt="Repo"/>
         </a>
       </div>
     </td>
@@ -117,12 +125,16 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat** with
       <div align="center">
         <h3>🖥️ Biodata Saya Portal</h3>
         <p>Futuristic cybernetic portfolio website with neon matrix themes, particle effects & audio SFX.</p>
-        <a href="https://biodata-saya-one.vercel.app/">
-          <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/preview-portfolio.png" width="96%" alt="Biodata Preview" style="border-radius: 8px;" />
+        <a href="https://biodata-saya-one.vercel.app/" target="_blank" title="Launch Portfolio Portal">
+          <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/preview-portfolio.png?v=20261001" width="96%" alt="Biodata Preview" style="border-radius: 8px;" />
         </a>
         <br/><br/>
         <a href="https://biodata-saya-one.vercel.app/" target="_blank">
           <img src="https://img.shields.io/badge/Live_Demo-00FFFF?style=flat-square&logo=vercel&logoColor=black" alt="Live Demo"/>
+        </a>
+        &nbsp;
+        <a href="https://github.com/RahmannCH/Biodata-Saya">
+          <img src="https://img.shields.io/badge/Repository-1A1A1A?style=flat-square&logo=github&logoColor=white" alt="Repo"/>
         </a>
       </div>
     </td>
@@ -131,6 +143,7 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat** with
 
 ---
 
+<span id="tech"></span>
 ## ⚡ Technical Arsenal
 
 <table width="100%">
@@ -178,6 +191,7 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat** with
 
 ---
 
+<span id="academic"></span>
 ## 🎓 Academic & Background
 
 <details>
@@ -186,7 +200,7 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat** with
   <blockquote>
     <b>Universitas Lambung Mangkurat (ULM)</b><br/>
     <i>Bachelor of Computer Science (S1 Ilmu Komputer) — FMIPA</i><br/>
-    • Current student specializing in software engineering, algorithms, and automata theory.<br/>
+    • Current undergraduate student specializing in software engineering, algorithms, and automata theory.<br/>
     • Active member of HIMAKOM (Himpunan Mahasiswa Ilmu Komputer).<br/><br/>
     <b>SMKN 1 Banjarmasin</b><br/>
     <i>Teknik Jaringan Komputer & Telekomunikasi (TJKT) — Graduated 2025</i><br/>
@@ -196,6 +210,7 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat** with
 
 ---
 
+<span id="analytics"></span>
 ## 📊 Analytics & Metrics
 
 <div align="center">
@@ -223,6 +238,7 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat** with
 
 ---
 
+<span id="connect"></span>
 ## 🌐 Connect With Me
 
 <div align="center">
