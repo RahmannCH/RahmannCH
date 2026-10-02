@@ -38,6 +38,11 @@
 
 Undergraduate Computer Science student at **Universitas Lambung Mangkurat (ULM)** with a solid infrastructure & network engineering background from **SMKN 1 Banjarmasin (TJKT)**. Specializing in high-performance web ecosystems, procedural audio engines, hardware-accelerated UI/UX motion (Glassmorphism & 3D accents), and autonomous multi-agent systems.
 
+> **Try my interactive terminal card directly in your terminal:**
+> ```bash
+> npx rahmannch
+> ```
+
 ---
 
 <span id="projects"></span>
