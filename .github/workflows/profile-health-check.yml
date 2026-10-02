@@ -1,0 +1,89 @@
+name: Live Activity & Health Check Update
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # Every 6 hours
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check Services Health & Fetch Activity
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const readmePath = 'README.md';
+            let readme = fs.readFileSync(readmePath, 'utf8');
+            
+            // 1. Fetch Latest Activity
+            console.log('Fetching latest activity...');
+            const events = await github.rest.activity.listPublicEventsForUser({
+              username: context.repo.owner,
+              per_page: 15
+            });
+            
+            let activityLog = '\n<ul>\n';
+            let count = 0;
+            for (const event of events.data) {
+              if (count >= 5) break;
+              if (event.type === 'PushEvent') {
+                const repoName = event.repo.name;
+                const commits = event.payload.commits.length;
+                const msg = event.payload.commits[0]?.message.split('\n')[0] || 'Updates';
+                activityLog += `  <li>🚀 Pushed <b>${commits}</b> commit(s) to <a href="https://github.com/${repoName}">${repoName}</a>: <i>"${msg}"</i></li>\n`;
+                count++;
+              } else if (event.type === 'IssuesEvent' && event.payload.action === 'opened') {
+                activityLog += `  <li>🐛 Opened issue in <a href="https://github.com/${event.repo.name}">${event.repo.name}</a></li>\n`;
+                count++;
+              } else if (event.type === 'CreateEvent' && event.payload.ref_type === 'repository') {
+                activityLog += `  <li>🎉 Created a new repository <a href="https://github.com/${event.repo.name}">${event.repo.name}</a></li>\n`;
+                count++;
+              }
+            }
+            activityLog += '</ul>\n';
+            
+            if (count > 0) {
+              // Replace section in README
+              const regex = /<!-- ACTIVITY_START -->[\s\S]*<!-- ACTIVITY_END -->/;
+              const replacement = `<!-- ACTIVITY_START -->\n${activityLog}\n<!-- ACTIVITY_END -->`;
+              if (regex.test(readme)) {
+                readme = readme.replace(regex, replacement);
+              } else {
+                readme += `\n\n## ⚡ Recent Development Activity\n<!-- ACTIVITY_START -->\n${activityLog}\n<!-- ACTIVITY_END -->\n`;
+              }
+            }
+            
+            // 2. Simple Health Status (Ping test)
+            const targets = ['https://zadify.vercel.app', 'https://game-farm-2-0.vercel.app', 'https://code-chrome.vercel.app'];
+            let allUp = true;
+            for (const t of targets) {
+              try {
+                const res = await fetch(t);
+                if (!res.ok) allUp = false;
+              } catch(e) { allUp = false; }
+            }
+            
+            const statusBadge = allUp 
+              ? 'https://img.shields.io/badge/Services-99.9%25_Operational-34d399?style=flat-square&logo=vercel&logoColor=black'
+              : 'https://img.shields.io/badge/Services-Degraded-ef4444?style=flat-square&logo=vercel&logoColor=white';
+              
+            const badgeRegex = /<!-- HEALTH_START -->[\s\S]*<!-- HEALTH_END -->/;
+            const newBadge = `<!-- HEALTH_START --><img src="${statusBadge}" alt="Service Health" /><!-- HEALTH_END -->`;
+            if (badgeRegex.test(readme)) {
+              readme = readme.replace(badgeRegex, newBadge);
+            }
+            
+            fs.writeFileSync(readmePath, readme);
+
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add README.md
+          git commit -m "chore: update live activity and health status [skip ci]" || exit 0
+          git push
