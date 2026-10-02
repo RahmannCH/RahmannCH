@@ -146,6 +146,12 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat (ULM)*
 <span id="tech"></span>
 ## ⚡ Technical Arsenal
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/tech-orbit.svg?v=20261001" width="412" alt="Tech Ecosystem Orbit" />
+</div>
+
+<br/>
+
 <table width="100%">
   <tr>
     <td width="25%" valign="top"><b>Languages</b></td>

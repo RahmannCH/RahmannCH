@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 412 260" width="412" height="260">
+  <style>
+    .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1.5px; rx: 12px; }
+    .orbit { stroke: rgba(0,255,255,0.15); stroke-width: 1px; fill: none; stroke-dasharray: 4 4; }
+    .core-glow { filter: drop-shadow(0 0 12px rgba(0,255,255,0.6)); }
+    
+    @keyframes spinRight { 100% { transform: rotate(360deg); } }
+    @keyframes spinLeft { 100% { transform: rotate(-360deg); } }
+    @keyframes pulse { 50% { filter: drop-shadow(0 0 20px rgba(0,255,255,0.9)); transform: scale(1.05); } }
+
+    .ring1 { transform-origin: 206px 130px; animation: spinRight 20s linear infinite; }
+    .ring2 { transform-origin: 206px 130px; animation: spinLeft 25s linear infinite; }
+    .ring3 { transform-origin: 206px 130px; animation: spinRight 30s linear infinite; }
+    
+    /* Counter-rotate items so they stay upright */
+    .item1 { transform-origin: center; animation: spinLeft 20s linear infinite; }
+    .item2 { transform-origin: center; animation: spinRight 25s linear infinite; }
+    .item3 { transform-origin: center; animation: spinLeft 30s linear infinite; }
+    
+    .core { transform-origin: center; animation: pulse 3s ease-in-out infinite; }
+    .text-title { font-family: -apple-system, sans-serif; font-size: 13px; font-weight: 700; fill: #00ffff; letter-spacing: 2px; }
+  </style>
+
+  <rect width="410" height="258" x="1" y="1" class="bg" />
+  
+  <text x="206" y="28" text-anchor="middle" class="text-title core-glow">TECH ECOSYSTEM</text>
+
+  <!-- Orbits -->
+  <circle cx="206" cy="130" r="50" class="orbit" />
+  <circle cx="206" cy="130" r="80" class="orbit" />
+  <circle cx="206" cy="130" r="110" class="orbit" />
+
+  <!-- Core (Zadify AI) -->
+  <g class="core" transform="translate(206, 130)">
+    <circle cx="0" cy="0" r="20" fill="#161b22" stroke="#00ffff" stroke-width="2" class="core-glow"/>
+    <circle cx="0" cy="0" r="8" fill="#00ffff" />
+  </g>
+
+  <!-- Ring 1 (Inner) -->
+  <g class="ring1">
+    <g transform="translate(206, 80)" class="item1">
+      <circle cx="0" cy="0" r="14" fill="#3178c6" />
+      <text x="0" y="4" font-size="10" fill="white" text-anchor="middle" font-weight="bold" font-family="sans-serif">TS</text>
+    </g>
+    <g transform="translate(206, 180)" class="item1">
+      <circle cx="0" cy="0" r="14" fill="#f7df1e" />
+      <text x="0" y="4" font-size="10" fill="black" text-anchor="middle" font-weight="bold" font-family="sans-serif">JS</text>
+    </g>
+  </g>
+
+  <!-- Ring 2 (Middle) -->
+  <g class="ring2">
+    <g transform="translate(286, 130)" class="item2">
+      <circle cx="0" cy="0" r="16" fill="#000000" stroke="white" stroke-width="1" />
+      <text x="0" y="4" font-size="9" fill="white" text-anchor="middle" font-weight="bold" font-family="sans-serif">Next</text>
+    </g>
+    <g transform="translate(126, 130)" class="item2">
+      <circle cx="0" cy="0" r="16" fill="#61dafb" />
+      <text x="0" y="4" font-size="9" fill="#20232a" text-anchor="middle" font-weight="bold" font-family="sans-serif">React</text>
+    </g>
+  </g>
+
+  <!-- Ring 3 (Outer) -->
+  <g class="ring3">
+    <g transform="translate(206, 20)" class="item3">
+      <circle cx="0" cy="0" r="18" fill="#43853d" />
+      <text x="0" y="4" font-size="9" fill="white" text-anchor="middle" font-weight="bold" font-family="sans-serif">Node</text>
+    </g>
+    <g transform="translate(96, 130)" class="item3">
+      <circle cx="0" cy="0" r="18" fill="#38b2ac" />
+      <text x="0" y="4" font-size="9" fill="white" text-anchor="middle" font-weight="bold" font-family="sans-serif">Tailwind</text>
+    </g>
+    <g transform="translate(316, 130)" class="item3">
+      <circle cx="0" cy="0" r="18" fill="#316192" />
+      <text x="0" y="4" font-size="9" fill="white" text-anchor="middle" font-weight="bold" font-family="sans-serif">Postgres</text>
+    </g>
+  </g>
+
+</svg>
