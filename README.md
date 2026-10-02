@@ -216,12 +216,7 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat (ULM)*
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=RahmannCH&theme=dracula&hide_border=true&bg_color=0D1117&title_color=00FFFF&icon_color=00FFFF&text_color=F0F6FC&show_icons=true" alt="GitHub Stats" />
   &nbsp;
-  <img src="https://streak-stats.demolab.com/?user=RahmannCH&theme=dark&hide_border=true&background=0D1117&ring=00FFFF&fire=00FFFF&currStreakNum=F0F6FC&sideNums=F0F6FC&currStreakLabel=8B949E&sideLabels=8B949E&dates=8B949E" alt="GitHub Streak" />
-</div>
-
-<br/>
-
-<div align="center">
+  <!-- Dynamic GitHub Stats API (Deploy api/stats.ts to Vercel and replace the URL below!) -->
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RahmannCH&theme=dracula&hide_border=true&bg_color=0D1117&title_color=00FFFF&text_color=F0F6FC&layout=compact" alt="Top Languages" />
 </div>
 
