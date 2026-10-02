@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 260" width="840" height="260">
+  <style>
+    .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1.5px; rx: 12px; }
+    .panel { fill: #161b22; stroke: #21262d; stroke-width: 1px; rx: 8px; }
+    .titlebar { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; font-size: 11px; fill: #8b949e; letter-spacing: 1px; font-weight: 600; text-transform: uppercase; }
+    .subtitle { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 10px; fill: #8b949e; font-weight: 500; }
+    .accent { fill: #00ffff; }
+    .accent-glow { filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.6)); }
+    .grid-line { stroke: #21262d; stroke-width: 1; stroke-dasharray: 4 4; }
+    .header-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 14px; font-weight: 800; fill: #f0f6fc; letter-spacing: 0.5px; }
+    .body-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 12px; fill: #c9d1d9; font-weight: 500; }
+    
+    /* Animations */
+    @keyframes scan { 
+      0% { transform: translateY(0); opacity: 0; }
+      10% { opacity: 0.8; }
+      90% { opacity: 0.8; }
+      100% { transform: translateY(140px); opacity: 0; }
+    }
+    .scanner { animation: scan 3s linear infinite; }
+    
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+    .pulsing { animation: pulse 2s ease-in-out infinite; }
+    .pulsing-fast { animation: pulse 0.8s ease-in-out infinite; }
+
+    @keyframes sine { 0% { transform: translateY(0); } 50% { transform: translateY(-15px); } 100% { transform: translateY(0); } }
+    .wave1 { animation: sine 2s ease-in-out infinite; }
+    .wave2 { animation: sine 2s ease-in-out infinite 0.2s; }
+    .wave3 { animation: sine 2s ease-in-out infinite 0.4s; }
+    .wave4 { animation: sine 2s ease-in-out infinite 0.6s; }
+    .wave5 { animation: sine 2s ease-in-out infinite 0.8s; }
+  </style>
+
+  <rect width="838" height="258" x="1" y="1" class="bg" />
+
+  <!-- Top Title Bar -->
+  <path d="M1 12 C1 5.925 5.925 1 12 1 L828 1 C834.075 1 839 5.925 839 12 L839 36 L1 36 Z" fill="#161b22" stroke="#30363d" stroke-width="1.5" />
+  <circle cx="20" cy="18" r="4.5" fill="#ff5f56" />
+  <circle cx="34" cy="18" r="4.5" fill="#ffbd2e" />
+  <circle cx="48" cy="18" r="4.5" fill="#27c93f" />
+  <text x="420" y="23" text-anchor="middle" class="titlebar accent-glow accent">SYS_ARCH :: Core Engineering Capabilities</text>
+  <text x="760" y="23" text-anchor="middle" class="titlebar">STATUS: <tspan fill="#34d399">ONLINE</tspan></text>
+
+  <!-- COLUMN 1: Visual & Motion Engine -->
+  <g transform="translate(20, 55)">
+    <rect width="255" height="180" class="panel" />
+    <text x="16" y="26" class="header-text">Visual &amp; Motion Engine</text>
+    <line x1="16" y1="36" x2="239" y2="36" class="grid-line" />
+    
+    <text x="16" y="58" class="body-text">▪ Hardware-Accelerated UI</text>
+    <text x="16" y="76" class="body-text">▪ Canvas 2D Game Loops</text>
+    <text x="16" y="94" class="body-text">▪ Glassmorphism &amp; 3D Transforms</text>
+    <text x="16" y="112" class="body-text">▪ Procedural Web Audio DSP</text>
+
+    <!-- Animation Graphic -->
+    <g transform="translate(127, 155)">
+      <circle cx="-40" cy="0" r="5" fill="#00ffff" class="wave1 accent-glow" />
+      <circle cx="-20" cy="0" r="5" fill="#00ffff" class="wave2 accent-glow" />
+      <circle cx="0" cy="0" r="5" fill="#00ffff" class="wave3 accent-glow" />
+      <circle cx="20" cy="0" r="5" fill="#00ffff" class="wave4 accent-glow" />
+      <circle cx="40" cy="0" r="5" fill="#00ffff" class="wave5 accent-glow" />
+    </g>
+  </g>
+
+  <!-- COLUMN 2: Logic & Architecture -->
+  <g transform="translate(290, 55)">
+    <rect width="260" height="180" class="panel" />
+    <text x="16" y="26" class="header-text">Logic &amp; Architecture</text>
+    <line x1="16" y1="36" x2="244" y2="36" class="grid-line" />
+    
+    <text x="16" y="58" class="body-text">▪ Finite State Machines (DFA)</text>
+    <text x="16" y="76" class="body-text">▪ Strict TypeScript Types</text>
+    <text x="16" y="94" class="body-text">▪ Multi-Agent Orchestration</text>
+    <text x="16" y="112" class="body-text">▪ Directed Acyclic Graphs (DAG)</text>
+
+    <!-- Node Graph Graphic -->
+    <g transform="translate(130, 150)">
+      <line x1="-40" y1="10" x2="0" y2="-15" stroke="#30363d" stroke-width="2" />
+      <line x1="40" y1="10" x2="0" y2="-15" stroke="#30363d" stroke-width="2" />
+      <line x1="-40" y1="10" x2="40" y2="10" stroke="#00ffff" stroke-width="2" class="pulsing" />
+      
+      <circle cx="-40" cy="10" r="6" fill="#161b22" stroke="#00ffff" stroke-width="2" />
+      <circle cx="40" cy="10" r="6" fill="#161b22" stroke="#00ffff" stroke-width="2" />
+      <circle cx="0" cy="-15" r="8" fill="#00ffff" class="accent-glow pulsing-fast" />
+    </g>
+  </g>
+
+  <!-- COLUMN 3: Infra & CyberSec -->
+  <g transform="translate(565, 55)">
+    <rect width="255" height="180" class="panel" />
+    <text x="16" y="26" class="header-text">Infra &amp; Security</text>
+    <line x1="16" y1="36" x2="239" y2="36" class="grid-line" />
+    
+    <text x="16" y="58" class="body-text">▪ Serverless Edge Functions</text>
+    <text x="16" y="76" class="body-text">▪ Vercel &amp; Cloudflare Tunnels</text>
+    <text x="16" y="94" class="body-text">▪ Linux Server Hardening</text>
+    <text x="16" y="112" class="body-text">▪ Network Penetration Testing</text>
+
+    <!-- Server Rack Graphic -->
+    <g transform="translate(45, 135)">
+      <rect width="165" height="10" rx="2" fill="#21262d" />
+      <rect width="165" height="10" y="15" rx="2" fill="#21262d" />
+      <rect width="165" height="10" y="30" rx="2" fill="#21262d" />
+      
+      <circle cx="10" cy="5" r="2.5" fill="#34d399" class="pulsing" />
+      <circle cx="10" cy="20" r="2.5" fill="#34d399" class="pulsing" style="animation-delay: 0.5s;" />
+      <circle cx="10" cy="35" r="2.5" fill="#00ffff" class="pulsing-fast accent-glow" />
+      
+      <rect x="25" y="4" width="30" height="2" fill="#8b949e" />
+      <rect x="25" y="19" width="40" height="2" fill="#8b949e" />
+      <rect x="25" y="34" width="20" height="2" fill="#00ffff" />
+    </g>
+  </g>
+
+</svg>
