@@ -216,6 +216,12 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat (ULM)*
   </blockquote>
 </details>
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/now-playing.svg?v=20261002" width="480" alt="Now Playing Card" />
+</div>
+
+<br/><br/>
+
 ---
 
 <span id="analytics"></span>
@@ -244,6 +250,9 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat (ULM)*
     <img src="https://raw.githubusercontent.com/RahmannCH/RahmannCH/main/assets/github-contribution-grid-snake-dark.svg" alt="Contribution Snake" />
   </picture>
 </div>
+
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
 
 ---
 
