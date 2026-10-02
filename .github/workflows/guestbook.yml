@@ -1,0 +1,111 @@
+name: Update Profile Guestbook
+
+on:
+  issues:
+    types: [opened]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  update-guestbook:
+    if: contains(github.event.issue.labels.*.name, 'guestbook') || startsWith(github.event.issue.title, 'Guestbook') || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Process Guestbook Entry
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const readmePath = 'README.md';
+            
+            // 1. Fetch recent issues with label 'guestbook'
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'all',
+              labels: 'guestbook',
+              per_page: 20,
+              sort: 'created',
+              direction: 'desc'
+            });
+
+            // If triggered by a specific new issue, close it with a friendly message
+            if (context.payload.issue && context.payload.issue.state === 'open') {
+              try {
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: context.payload.issue.number,
+                  body: `✨ **Thanks @${context.payload.issue.user.login} for signing the guestbook!**\n\nYour message is now live on the profile README.`
+                });
+                await github.rest.issues.update({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: context.payload.issue.number,
+                  state: 'closed'
+                });
+              } catch (e) {
+                console.error('Failed to auto-close issue:', e);
+              }
+            }
+
+            let entries = [];
+            for (const issue of issues.data) {
+              if (!issue.user || issue.user.type === 'Bot') continue;
+              
+              const user = issue.user.login;
+              const avatar = issue.user.avatar_url;
+              const date = new Date(issue.created_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+              
+              // Extract message body
+              let msg = issue.body || '';
+              // Clean up template labels if present
+              msg = msg.replace(/### Your Message/g, '').replace(/### Thanks for stopping by![\s\S]*?\n\n/g, '').trim();
+              if (!msg) msg = issue.title.replace(/^Guestbook:\s*/i, '').trim();
+              
+              // Sanitize HTML
+              msg = msg.replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\|/g, '&#124;').replace(/\n/g, ' ');
+              if (msg.length > 180) msg = msg.substring(0, 177) + '...';
+
+              entries.push({ user, avatar, date, msg });
+              if (entries.length >= 6) break;
+            }
+
+            let tableContent = '';
+            if (entries.length === 0) {
+              tableContent = `
+| User | Message | Date |
+| :--- | :--- | :---: |
+| <img src="https://github.com/RahmannCH.png" width="30" style="border-radius:50%;" /> **@RahmannCH** | Welcome to my GitHub profile! Feel free to leave a message. | *Oct 2026* |
+`.trim();
+            } else {
+              tableContent = '| User | Message | Date |\n| :--- | :--- | :---: |\n';
+              for (const e of entries) {
+                tableContent += `| <img src="${e.avatar}" width="30" style="border-radius:50%;" /> **[@${e.user}](https://github.com/${e.user})** | ${e.msg} | *${e.date}* |\n`;
+              }
+            }
+
+            let readme = fs.readFileSync(readmePath, 'utf8');
+            const guestbookRegex = /<!-- GUESTBOOK_START -->[\s\S]*?<!-- GUESTBOOK_END -->/;
+            const replacement = `<!-- GUESTBOOK_START -->\n${tableContent.trim()}\n<!-- GUESTBOOK_END -->`;
+
+            if (guestbookRegex.test(readme)) {
+              readme = readme.replace(guestbookRegex, replacement);
+              fs.writeFileSync(readmePath, readme, 'utf8');
+            } else {
+              console.log('GUESTBOOK markers not found in README.md');
+            }
+
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: update interactive profile guestbook [skip ci]" || exit 0
+          git push

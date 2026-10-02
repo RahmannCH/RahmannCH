@@ -1,0 +1,18 @@
+name: ✍️ Sign Profile Guestbook
+description: Leave a message on Muhammad Nur Rahman's GitHub Profile!
+title: "Guestbook: [Your Name or Message]"
+labels: ["guestbook"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Thanks for stopping by!
+        Leave your friendly comment, shout-out, or feedback. This message will be automatically rendered in the Guestbook section of the profile README.
+  - type: textarea
+    id: message
+    attributes:
+      label: Your Message
+      description: Write what's on your mind (keep it respectful!)
+      placeholder: "Loved your Zadify app! Great UI and engineering."
+    validations:
+      required: true

@@ -7,6 +7,7 @@
   <a href="#tech"><b>[ ⚡ Tech Arsenal ]</b></a> &nbsp;•&nbsp;
   <a href="#academic"><b>[ 🎓 Background ]</b></a> &nbsp;•&nbsp;
   <a href="#analytics"><b>[ 📊 Analytics ]</b></a> &nbsp;•&nbsp;
+  <a href="#guestbook"><b>[ ✍️ Guestbook ]</b></a> &nbsp;•&nbsp;
   <a href="#connect"><b>[ 🌐 Connect ]</b></a>
 </p>
 
@@ -260,6 +261,26 @@ Undergraduate Computer Science student at **Universitas Lambung Mangkurat (ULM)*
 <!--END_SECTION:waka-->
 
 ---
+
+
+---
+
+<span id="guestbook"></span>
+## ✍️ Interactive Guestbook
+
+Want to say hi, collaborate, or leave feedback? **[Click here to sign the guestbook](https://github.com/RahmannCH/RahmannCH/issues/new?template=guestbook.yml&title=Guestbook%3A+Hello!)** and your message will automatically appear below via GitHub Actions!
+
+<div align="center">
+
+<!-- GUESTBOOK_START -->
+| User | Message | Date |
+| :--- | :--- | :---: |
+| <img src="https://github.com/RahmannCH.png" width="30" style="border-radius:50%;" /> **[@RahmannCH](https://github.com/RahmannCH)** | Welcome to my GitHub profile! Click the link above to leave a message. | *Oct 2026* |
+<!-- GUESTBOOK_END -->
+
+</div>
+
+<br/>
 
 <span id="connect"></span>
 ## 🌐 Connect With Me
